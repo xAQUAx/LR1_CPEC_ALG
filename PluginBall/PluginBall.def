@@ -1,0 +1,4 @@
+LIBRARY PluginBall
+EXPORTS
+	GetPluginFigureName
+	GetPluginFigure

@@ -9,5 +9,9 @@
 
 // Добавьте сюда заголовочные файлы для предварительной компиляции
 #include "framework.h"
+#include <iostream>
+#include <string>
+#include "Figure.h"
+#include "Ball.h"
 
 #endif //PCH_H

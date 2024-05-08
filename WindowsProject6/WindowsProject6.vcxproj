@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\mix13\Documents\учеба\3 курс 6 семестр\спец алгоритмы\ЛР1 лаба\Орлов М.П. ОСБД дз2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\mix13\Documents\учеба\3 курс 6 семестр\спец алгоритмы\ЛР1 лаба\Орлов М.П. ОСБД дз2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -104,6 +106,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\mix13\Documents\учеба\3 курс 6 семестр\спец алгоритмы\ЛР1 лаба\Орлов М.П. ОСБД дз2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -118,6 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\mix13\Documents\учеба\3 курс 6 семестр\спец алгоритмы\ЛР1 лаба\Орлов М.П. ОСБД дз2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -127,9 +131,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Ball.h" />
+    <ClInclude Include="..\include\Figure.h" />
     <ClInclude Include="Coub.h" />
-    <ClInclude Include="Figure.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
@@ -137,7 +140,6 @@
     <ClInclude Include="WindowsProject6.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Coub.cpp" />
     <ClCompile Include="Triangle.cpp" />
     <ClCompile Include="WindowsProject6.cpp" />
@@ -148,6 +150,11 @@
   <ItemGroup>
     <Image Include="small.ico" />
     <Image Include="WindowsProject6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PluginBall\PluginBall.vcxproj">
+      <Project>{8b534f8f-d383-4b16-b7a3-c69eb3afd912}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
